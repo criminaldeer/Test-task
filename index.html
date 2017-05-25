@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Test Task</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div id="mobile-menu-container">
+            <div id="mobile-menu"></div>
+        </div>
+        <img id="logo" src="logo.jpg" alt="Logotype"/>
+        <div id="drop-down-menu">
+            <a href="">Menu1</a>
+            <a href="">Menu2</a>
+            <a href="">Menu3</a>
+        </div>
+        <nav>
+            <a href="">Menu1</a>
+            <a href="">Menu2</a>
+            <a href="">Menu3</a>
+        </nav>
+        <a href="" class="button">Help button</a>
+    </header>
+    <div id="container" class="clearfix">
+        <div class="left-side-block clearfix">
+            <p>Block 1</p>
+            <p>250px</p>
+        </div>
+        <div class="content-block clearfix">
+            <p>Block 2</p>
+            <div class="comment">
+                <img src="head.jpg" alt="Profile picture"/>
+                <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed dapibus lobortis risus in interdum.Integer neque risus, aliquam ac urna ut,
+                        hendrerit viverra diam. Vestibulum tincidunt ac quam sit amet scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed dapibus lobortis risus in interdum.Integer neque risus, aliquam ac urna ut,
+                    hendrerit viverra diam. Vestibulum tincidunt ac quam sit amet scelerisque.</p>
+            </div>
+            <div class="comment">
+                <img src="head.jpg" alt="Profile picture"/>
+                <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed dapibus lobortis risus in interdum.Integer neque risus, aliquam ac urna ut,
+                    hendrerit viverra diam. Vestibulum tincidunt ac quam sit amet scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed dapibus lobortis risus in interdum.Integer neque risus, aliquam ac urna ut,
+                    hendrerit viverra diam. Vestibulum tincidunt ac quam sit amet scelerisque.</p>
+            </div>
+            <div class="comment">
+                <img src="head.jpg" alt="Profile picture"/>
+                <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed dapibus lobortis risus in interdum.Integer neque risus, aliquam ac urna ut,
+                    hendrerit viverra diam. Vestibulum tincidunt ac quam sit amet scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed dapibus lobortis risus in interdum.Integer neque risus, aliquam ac urna ut,
+                    hendrerit viverra diam. Vestibulum tincidunt ac quam sit amet scelerisque.</p>
+            </div>
+            <div class="comment">
+                <img src="head.jpg" alt="Profile picture"/>
+                <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed dapibus lobortis risus in interdum.Integer neque risus, aliquam ac urna ut,
+                    hendrerit viverra diam. Vestibulum tincidunt ac quam sit amet scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed dapibus lobortis risus in interdum.Integer neque risus, aliquam ac urna ut,
+                    hendrerit viverra diam. Vestibulum tincidunt ac quam sit amet scelerisque.</p>
+            </div>
+            <p class="description-text">Vestibulum vitae lacus auctor lorem placerat porttitor sagittis a arcu.
+                Duis bibendum lacus et metus suscipit fringilla. Donec pharetra vitae nisi at molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed dapibus lobortis risus in interdum.Integer neque risus, aliquam ac urna ut,
+                hendrerit viverra diam. Vestibulum tincidunt ac quam sit amet scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed dapibus lobortis risus in interdum.Integer neque risus, aliquam ac urna ut,
+                hendrerit viverra diam. Vestibulum tincidunt ac quam sit amet scelerisque.</p>
+        </div>
+        <div class="right-side-block clearfix">
+            <p>Block 3</p>
+            <p>200px</p>
+        </div>
+    </div>
+    <script>
+        var menu = document.querySelector("#drop-down-menu");
+        var buttonMenu = document.querySelector("#mobile-menu");
+        buttonMenu.addEventListener('click', function() {
+            if ((menu.style.display == '') || (menu.style.display == 'none')){
+                menu.style.display = "block";
+                buttonMenu.style.marginLeft = "326px";
+            } else {
+                menu.style.display = "none";
+                buttonMenu.style.marginLeft = "26px";
+            }
+        });
+
+    </script>
+</body>
+</html>

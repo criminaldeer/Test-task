@@ -1,0 +1,152 @@
+body {
+    margin:0 auto;
+    min-width: 750px;
+    position: relative;
+}
+header {
+    width: 100%;
+    background-color: grey;
+    height: 75px;
+}
+#logo {
+    width:20%;
+    height: 75px;
+}
+#mobile-menu-container {
+    display: none;
+    cursor: pointer;
+    float: left;
+    height: 100%;
+}
+#drop-down-menu {
+    position: absolute;
+    display: none;
+    width: 40%;
+    background-color: darkgrey;
+    top: 0px;
+    bottom: 0px;
+}
+#drop-down-menu a {
+    display: block;
+    width: 95%;
+    padding: 1% 0;
+    border: 1px white solid;
+    font-size: 26px;
+    padding-left: 14px;
+    color: white;
+}
+nav {
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 30px;
+    margin-left: -4px;
+}
+nav a, .button {
+    text-decoration: none;
+    padding: 30px 10px;
+    border-left: 1px solid white;
+    color: black;
+}
+nav a:last-of-type {
+    border-right: 1px solid white;
+}
+.button {
+    float: right;
+    padding: 28px 10px;
+}
+#container {
+    width: 100%;
+}
+p {
+    text-align: center;
+}
+.left-side-block, .content-block, .right-side-block {
+    border: 2px solid white;
+    float: left;
+}
+.left-side-block {
+    height: 250px;
+    width: 250px;
+    background-color: lightgrey;
+}
+.right-side-block {
+    height: 1000px;
+    width: 200px;
+    background-color: lightgrey;
+}
+.content-block {
+    width:calc(100% - 482px);
+    background-color: lightgrey;
+    padding: 0 10px;
+}
+.comment {
+    background-color: beige;
+    margin-bottom: 2%;
+}
+.comment img {
+    width: 15%;
+}
+.comment-text {
+    display: inline-block;
+    width: 84%;
+    text-align: justify;
+    vertical-align: top;
+}
+.description-text {
+    text-align: justify;
+    margin-top:2%;
+    margin-bottom: 30%;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.show {
+    display: block;
+}
+
+@media only screen and (max-width: 749px) {
+    header {
+        height: 90px;
+        padding: 0 20px 0 0;
+    }
+    nav {
+        display: none;
+    }
+    .left-side-block, .content-block, .right-side-block {
+        display: inline-block;
+        float: none;
+    }
+    #mobile-menu-container {
+        display: block;
+        border-right: 2px solid white;
+    }
+    #mobile-menu {
+        border-bottom: 17px double black;
+        border-top: 6px solid black;
+        content:"";
+        height: 5px;
+        width:42px;
+        border-color: white;
+        margin: 32px 23px;
+    }
+
+    #logo {
+        width: 14%;
+        height: 89px;
+    }
+    .button {
+        padding: 36px 10px;
+    }
+    .left-side-block, .content-block, .right-side-block {
+        width:100%;
+        padding: 0 10px;
+    }
+    .right-side-block {
+        height: 200px;
+    }
+}
